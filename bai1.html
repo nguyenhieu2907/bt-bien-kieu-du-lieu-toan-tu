@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var DiemVatLy = prompt ("Nhap DiemVatLy: ");
+        var DiemHoaHoc = prompt("Nhap DiemHoaHoc: ");
+        var DiemSinhHoc = prompt("Nhap DiemSinhHoc: ");
+         DiemVatLy = parseFloat(DiemVatLy);
+         DiemHoaHoc = parseFloat(DiemHoaHoc);
+         DiemSinhHoc = parseFloat(DiemSinhHoc);
+        
+        var TongDiem = DiemVatLy + DiemHoaHoc + DiemSinhHoc;
+        var DiemTB = (DiemVatLy + DiemHoaHoc + DiemSinhHoc)/3;
+        document.write("Tongdiem: " +TongDiem)
+        document.write("<br/>")
+        document.write("DiemTB: " +DiemTB)
+
+    </script>
+</body>
+</html>
