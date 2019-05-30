@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+        <legend>Chuyển Đổi Tiền tệ</legend>
+        Amount<br/>
+        <input type="text" id="Amount">
+        <select name="FromCurrency" id="">        
+            <option value="VND">VietNamDong</option>
+        </select>
+        <select name="ToCurrency" id="">
+            <option value="USD">DoLaMy</option>
+
+        </select>
+			   <input type="button" value="Convert" onclick="btn()">
+			   
+		<p id="kqua"></p>
+	
+		</fieldset>
+
+
+	</form>
+</body>
+<script>
+	function btn(){
+		let money=document.getElementById("Amount").value;
+        money = parseFloat(money);
+		let quydoi=money/23000;
+		document.getElementById("kqua").innerHTML=quydoi +"USD";
+	}
+	
+	
+</script>
+</html>
